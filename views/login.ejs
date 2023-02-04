@@ -1,0 +1,19 @@
+<%- include('partials/header'); %>
+<center>
+<form method="post" action="/login">
+    
+    <h1 class="h3 mb-3 fw-normal">Please enter the security key:</h1>
+    
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="passcode">
+    </div>
+    <br>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    
+  </form>
+  <br>
+
+  <p><i>In case you are new here and want to contribute to the blog, please contact the developer for the security key.</i></p>
+</center>
+
+<%- include('partials/footer'); %>

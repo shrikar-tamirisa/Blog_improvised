@@ -1,0 +1,15 @@
+<%- include('partials/header'); %>
+
+<% for(var i=0;i<arr.length;i++){ %>
+    <br>
+    <h1 style="text-align: center;"><%= arr[i].title %></h1>
+    <pre>
+    <p>
+        <%= arr[i].content %>
+    </p>
+    </pre>
+
+    <br>
+<% } %>
+
+<%- include('partials/footer'); %>

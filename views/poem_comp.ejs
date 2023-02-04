@@ -1,0 +1,11 @@
+<%- include('partials/header'); %>
+<h1>Compose a Poem</h1>
+<br>
+<form action="/compose_poem" method="post">
+    <label>Title</label><br>
+    <input type="text" autocomplete="off" name="ip_title" class="form-control"><br>
+    <label>Post</label><br>
+    <textarea class="form-control" cols="40" rows="5" name="ip_body"></textarea><br>
+    <button type="submit" name="btn" class="btn btn-primary">Publish!</button>
+</form>
+<%- include('partials/footer'); %>

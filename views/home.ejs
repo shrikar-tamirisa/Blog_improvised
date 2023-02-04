@@ -1,0 +1,28 @@
+<%- include('partials/header'); %>
+<h1>Hello Readers! Welcome to The STEM Blog!</h1>
+<p>This is a place for passionate people like you! A place where we would discuss the latest events in the field of Sciences and Engineering.</p>
+<p>The authors of this blog will cover the latest advances in sciences that they find exciting and inspiring, the philosophical views of authors related to science, and even the latest research opportunities for aspiring students who wish to pursue scientific research as their career, around the world in various scientific fields!</p>
+<figure class="text-right">
+    <blockquote class="blockquote">
+      <p><i>“We have this one life to appreciate the grand design of the Universe, there is still plenty more to find out. We are all time travellers, journeying together into the future. Let us work together to make that future, a place we want to visit. In the next 100 years, we will embark on our greatest-ever adventure. Our destiny is in the stars!” </i></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <cite title="Source Title">~Stephen Hawking</cite>
+    </figcaption>
+  </figure>
+<br>
+
+<% for(var i=0;i<arr.length;i++){ %>
+    <br>
+    <h1><%= arr[i].title %></h1>
+    <p>
+        <%= arr[i].content.substring(0,100)+"..." %><a href="/posts/<%= arr[i].title %>">Read More</a>
+    </p>
+    
+    <br>
+<% } %>
+
+<br>
+<br>
+
+<%- include('partials/footer'); %>
